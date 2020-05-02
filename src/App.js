@@ -11,7 +11,7 @@ import ScrollToTop from './scroll/ScrollToTop'
 function App() {
     return (
         <div className="App">
-            <Router basename="/">
+            <Router basename="simple-sotas/">
                 <ScrollToTop/>
                 <Switch>
                     <Route path="/" exact component={Home} />
