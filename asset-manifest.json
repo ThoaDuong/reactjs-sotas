@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/simple-sotas/static/css/main.656e6314.chunk.css",
-    "main.js": "/simple-sotas/static/js/main.34fbe336.chunk.js",
-    "main.js.map": "/simple-sotas/static/js/main.34fbe336.chunk.js.map",
+    "main.js": "/simple-sotas/static/js/main.63bb808e.chunk.js",
+    "main.js.map": "/simple-sotas/static/js/main.63bb808e.chunk.js.map",
     "runtime-main.js": "/simple-sotas/static/js/runtime-main.9f3151ec.js",
     "runtime-main.js.map": "/simple-sotas/static/js/runtime-main.9f3151ec.js.map",
     "static/css/2.69121389.chunk.css": "/simple-sotas/static/css/2.69121389.chunk.css",
     "static/js/2.2b3e367c.chunk.js": "/simple-sotas/static/js/2.2b3e367c.chunk.js",
     "static/js/2.2b3e367c.chunk.js.map": "/simple-sotas/static/js/2.2b3e367c.chunk.js.map",
     "index.html": "/simple-sotas/index.html",
-    "precache-manifest.70b5d2e1350d5d595cd807effb721211.js": "/simple-sotas/precache-manifest.70b5d2e1350d5d595cd807effb721211.js",
+    "precache-manifest.08310a8bcdbc91dd01d77ca4960f3a3e.js": "/simple-sotas/precache-manifest.08310a8bcdbc91dd01d77ca4960f3a3e.js",
     "service-worker.js": "/simple-sotas/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/simple-sotas/static/css/2.69121389.chunk.css.map",
     "static/css/main.656e6314.chunk.css.map": "/simple-sotas/static/css/main.656e6314.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.69121389.chunk.css",
     "static/js/2.2b3e367c.chunk.js",
     "static/css/main.656e6314.chunk.css",
-    "static/js/main.34fbe336.chunk.js"
+    "static/js/main.63bb808e.chunk.js"
   ]
 }
