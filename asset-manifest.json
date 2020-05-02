@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/simple-sotas/static/css/main.656e6314.chunk.css",
+    "main.js": "/simple-sotas/static/js/main.34fbe336.chunk.js",
+    "main.js.map": "/simple-sotas/static/js/main.34fbe336.chunk.js.map",
+    "runtime-main.js": "/simple-sotas/static/js/runtime-main.9f3151ec.js",
+    "runtime-main.js.map": "/simple-sotas/static/js/runtime-main.9f3151ec.js.map",
+    "static/css/2.69121389.chunk.css": "/simple-sotas/static/css/2.69121389.chunk.css",
+    "static/js/2.2b3e367c.chunk.js": "/simple-sotas/static/js/2.2b3e367c.chunk.js",
+    "static/js/2.2b3e367c.chunk.js.map": "/simple-sotas/static/js/2.2b3e367c.chunk.js.map",
+    "index.html": "/simple-sotas/index.html",
+    "precache-manifest.70b5d2e1350d5d595cd807effb721211.js": "/simple-sotas/precache-manifest.70b5d2e1350d5d595cd807effb721211.js",
+    "service-worker.js": "/simple-sotas/service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/simple-sotas/static/css/2.69121389.chunk.css.map",
+    "static/css/main.656e6314.chunk.css.map": "/simple-sotas/static/css/main.656e6314.chunk.css.map",
+    "static/js/2.2b3e367c.chunk.js.LICENSE.txt": "/simple-sotas/static/js/2.2b3e367c.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/simple-sotas/static/media/bg-01.9774311f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f3151ec.js",
+    "static/css/2.69121389.chunk.css",
+    "static/js/2.2b3e367c.chunk.js",
+    "static/css/main.656e6314.chunk.css",
+    "static/js/main.34fbe336.chunk.js"
+  ]
+}
