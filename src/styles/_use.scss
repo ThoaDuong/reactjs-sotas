@@ -1,0 +1,89 @@
+.use{
+    padding-top: 100px;
+    position: relative;
+    margin-top: 100px;
+    padding-bottom: 150px;
+    &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        background-color: #555cf5;
+        opacity: .05;
+        clip-path: ellipse(70% 55% at 52% 62%);
+    }
+    .person-block{
+        box-shadow: 0 0 20px 0 rgba(0,0,0, 0.3);
+        border-top-left-radius: 50px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 50px;
+        transition: 0.4s;
+        position: relative;
+        &:hover{
+            cursor: pointer;
+            transform: translateY(-10px);
+        }
+        &::after{
+            font-family: 'Font Awesome 5 Free';
+            content: "\f00c";
+            font-weight: 900;
+            z-index: 2;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border-radius: 50%;
+            padding: 15px 18px;
+            background-color: white;
+            opacity: 0.5;
+            transition: 0.4s;
+        }
+        &:hover::after{
+            opacity: 8;
+            color: rgb(77, 158, 39);
+        }
+        &__img{
+            width: 100%;
+            max-width: 100%;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 10px;
+        }
+        .person-content{
+            padding: 20px;
+            &__title{
+                font-weight: 700;
+                color: $color-black;
+                &:hover{
+                    color: $color-blue;
+                }
+            }
+            &__describe{
+                line-height: 1.5;
+                margin-top: 20px;
+                color: $color-lightblack;
+            }
+            &__link{
+                color: $color-blue;
+                text-decoration: none;
+                font-weight: 700;
+                &:hover{
+                    color: $color-black;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 992px){
+    .use{
+        margin-top: 0;
+        &::after{
+            clip-path: ellipse(130% 58% at 50% 62%);
+        }
+        .person-block{
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+@import 'styles/animation';
+@import 'styles/common';
+//Home page
+@import 'styles/header';
+@import 'styles/leadslider';
+@import 'styles/start';
+@import 'styles/use';
+@import 'styles/features';
+@import 'styles/review';
+@import 'styles/laungh';
+@import 'styles/footer';
+//About page
+@import 'styles/titleblock';
+@import 'styles/aboutus';
+@import 'styles/aboutinfo';
+@import 'styles/ourteam';
+//Studies page
+@import 'styles/studiesitem';
+//Contact page
+@import 'styles/contactmap';
+@import 'styles/contactinfo';
+//Detail blog page
+@import 'styles/detailpost';
+@import 'styles/detailinfo'

@@ -1,0 +1,101 @@
+.detail-blog-main-content{
+    .custom-margin{
+        margin-top: 100px;
+    }
+    .detail-post{
+        .detail-item{
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+            &__img-date{
+                position: relative;
+            }
+            &__img{
+                width: 100%;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            &__date{
+                position: absolute;
+                left: 30px;
+                bottom: -20px;
+                padding: 10px;
+                background-color: $color-blue;
+                color: white;
+                border-radius: 10px;
+                display: inline-block;
+                font-weight: 700;
+                box-shadow: 6px 8px 20px 0px rgba(0,0,0,0.1);
+                font-size: 14px;
+            }
+            &__text{
+                padding: 45px 30px 30px 30px;
+            }
+            &__title{
+                &:hover{
+                    text-decoration: none;
+                }
+                &:hover{
+                    h4{
+                        color: $color-blue;
+                    }
+                }
+            }
+            &__readmore{
+                font-weight: 700;
+                color: $color-blue;
+                transition: all 0.3s;
+                &:hover{
+                    text-decoration: none;
+                    color: $color-black;
+                }
+            }
+            &__compose{
+                border-top: 1px solid #ccc;
+                padding-top: 15px;
+                margin-top: 25px;
+                color: #ccc;
+                font-size: 14px;
+                a{
+                    color: #ccc;
+                    transition: all 0.3s;
+                    &:hover{
+                        color: $color-blue;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .panigation-block{
+            ul{
+                list-style: none;
+                .active{
+                    background-color: $color-blue;
+                    a{
+                        color: white;
+                    }
+                }
+                li{
+                    display: inline-block;
+                    padding: 8px 15px;
+                    border: 1px solid #ccc;
+                    margin: 5px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    transition: all 0.3s;
+                    &:hover{
+                        @extend .active;
+                        cursor: pointer;
+                    }
+                    a{
+                        color: $color-blue;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.contact-info{
+    margin-top: 100px;
+    .get-in-touch{
+        .list-contact{
+            list-style: none;
+            li{
+                i{
+                    padding-right: 20px;
+                    color: $color-blue;
+                }
+                .list-item{
+                    color: $color-black;
+                    font-weight: 700;
+                    line-height: 2;
+                    transition: 0.3s;
+                }
+                a:hover{
+                    color: $color-blue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .send-message{
+        input{
+            height: 50px;
+            border: 1px solid #ccc;
+            outline: none;
+            &:focus{
+                border: 1px solid $color-blue;
+                box-shadow: none;
+            }
+        }
+        textarea{
+            @extend input;
+            height: 100%;
+        }
+    }
+}

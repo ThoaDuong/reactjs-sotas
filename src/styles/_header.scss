@@ -1,0 +1,50 @@
+header{
+    .nav-custom{
+        height: 75px;
+        background-color: #fff;
+        font-size: 18px;
+        #navbar{
+            background-color: white;
+        }
+        .menu{
+            z-index: 9;
+            li{
+                .active{
+                    color: $color-blue!important;
+                }
+                .child-item{
+                    z-index: 9;
+                    display: none;
+                    position: absolute;
+                    width: 170px;
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+                    padding: 10px 5px;
+                    background-color: #fff;
+                    animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                    ul{
+                        list-style: none;
+                        li{
+                            padding: 5px;
+                            a{
+                                text-decoration: none;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                a{
+                    color: #888!important;
+                    padding: 20px!important;
+                    font-weight: 700;
+                    &:hover{
+                        color: $color-blue!important;
+                    }
+                }
+                &:hover .child-item{
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.laungh{
+    position: relative;
+    &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        background-color: $color-bgdark;
+        clip-path: ellipse(70% 66% at 49% 26%);
+    }
+    .--custom-title{
+        color: white;
+        margin-top: 0px;
+        padding-top: 100px;
+    }
+    .--custom-describe{
+        color: white;
+        margin-bottom: 0px;
+    }
+    &__button{
+        text-align: center;
+        padding-bottom: 150px;
+        margin-top: 20px;
+    }
+}
+.about-laungh{
+    .laungh__button{
+        width: 50%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        form{
+            background-color: #fff;
+            overflow: hidden;
+            height: 60px;
+            padding: 5px;
+            border-radius: 30px;
+            margin: 0;
+            .input-subscribe{
+                width: 80%;
+                height: 50px;
+                border: none;
+                outline: none;
+                padding: 0 40px;
+            }
+            .-custom-button{
+                padding: 8px 0;
+                width: 20%;
+            }
+        }
+    }
+}
+//Responsive
+@media only screen and (max-width:992px){
+    .about-laungh{
+        .laungh__button{
+            width: 65%;
+            form{
+                .input-subscribe{
+                    width: 75%;
+                }
+                .-custom-button{
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .about-laungh{
+        .laungh__button{
+            width: 80%;
+            form{
+                .input-subscribe{
+                    width: 70%;
+                }
+                .-custom-button{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

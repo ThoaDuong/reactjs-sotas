@@ -1,0 +1,146 @@
+.start{
+    .left-block{
+        width: 90%;
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 7%;
+            left: -7%;
+            bottom: -7%;
+            z-index: -1;
+            width: 90%;
+            height: 95%;
+            background-color: rgba($color: $color-blue, $alpha: 0.08);
+            border-radius: 30% 5% 30% 5% / 30% 5% 30% 5%;
+        }
+        &__img{
+            width: 100%;
+            max-width: 100%;
+            border-radius: 30% 5% 30% 5% / 30% 5% 30% 5%;
+        }
+    }
+    .step-block{
+        &__icon{
+            color: $color-blue;
+            font-size: 35px;
+            margin: 0 40px;
+        }
+    }
+    .custom-margin{
+        margin-top: 150px;
+    }
+    .save-block{
+        width: 80%;
+        .change-color{
+            color: $color-blue!important;
+        }
+        .card-custom{
+            color: $color-black;
+            display: flex;
+            justify-content: space-between;
+            &:hover{
+                color: $color-blue;
+            }
+            h5{
+                font-weight: 700;
+            }
+        }
+        .collapse-custom{
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+            padding: 25px 30px 20px 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        
+    }
+    .right-block{
+        width: 90%;
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 7%;
+            left: 7%;
+            bottom: 7%;
+            z-index: -1;
+            width: 90%;
+            height: 100%;
+            background-color: rgba($color: $color-blue, $alpha: 0.08);
+            border-radius: 5% 30% 5% 30%/ 5% 30% 5% 30%;
+        }
+        &__img{
+            width: 100%;
+            max-width: 100%;
+            border-radius: 5% 30% 5% 30%/ 5% 30% 5% 30%;
+        }
+    }
+}
+@media only screen and (max-width:1200px){
+    .start{
+        .left-block{
+            width: 90%;
+            margin: auto;
+            &::after{
+                left: -5%;
+                width: 90%;
+                height: 80%;
+            }
+        }
+        .right-block{
+            width: 90%;
+            margin: auto;
+            &::after{
+                width: 94%;
+                height: 85%;
+                left: 10%;
+            }
+        }
+    }
+}
+@media only screen and (max-width:992px){
+    .start{
+        .left-block{
+            width: 80%;
+            margin: auto;
+            &::after{
+                left: 3%;
+                width: 80%;
+                height: 100%;
+            }
+        }
+        .right-block{
+            width: 80%;
+            margin: auto;
+            &::after{
+                left: 15%;
+                width: 80%;
+                height: 100%;
+            }
+        }
+        .custom-margin-res{
+            margin-top: 100px;
+        }
+        .save-block{
+            margin: auto;
+        }
+        .step-block{
+            &__icon{
+                font-size: 30px;
+                margin: 0 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:600px){
+    .start{
+        .collapse-custom{
+            h5{
+                font-size: 16px;
+            }
+        }
+        .collapse-text{
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+footer{
+    //Footer with light backgroud 
+    .footer{
+        margin-top: 100px;
+        &__title{
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: $color-black;
+        }
+        &__text{
+            color: $color-lightblack;
+            line-height: 2;
+            ul{
+                list-style: none;
+            }
+            a{
+                color: $color-black;
+                &:hover{
+                    color: $color-blue;
+                    text-decoration: none;
+                }
+            }
+        }
+        .form-block{
+            background-color: $color-bgdark;
+            padding: 30px 20px;
+            border-radius: 10px;
+            color: white;
+            .enter-input{
+                border-radius: 5px;
+                border: none;
+                height: 42px;
+                width: 75%;
+                padding: 0 20px;
+                outline: none;
+                &::placeholder{
+                    color: $color-lightblack;
+                    padding: 0 10px;
+                }
+            }
+            .submit-input{
+                background-color: $color-blue;
+                border-radius: 5px;
+                border: none;
+                margin-left: 5px;
+                color: white;
+                padding: 10px;
+            }
+            .custom-form-p{
+                color: $color-lightblack;
+                font-style: italic;
+                margin-bottom: 0;
+                margin-top: 16px;
+                font-size: 14px;
+            }
+        }
+        .icon-block{
+            margin: 20px 0;
+            i{
+                padding: 10px 12px;
+                background-color: $color-bgdark;
+                color: white;
+                border-radius: 50%;
+                margin-right: 15px;
+                &:hover{
+                    background-color: $color-blue;
+                    cursor: pointer;
+                }
+                &:first-child{
+                    padding: 10px 15px;
+                }
+            }
+            
+        }
+        .-custom-copyright{
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid $color-lightblack;
+        }
+    }
+    //Footer with dark backgroud 
+    .footer-dark{
+        background-color: $color-bgdark;
+        padding-top: 50px;
+        color: #999999;
+        .footer__title{
+            color: white;
+        }
+        .footer__text{
+            color: #999999;
+            a{
+                color: #999999;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+        .icon-block{
+            i{
+                background-color: white;
+                color: $color-black;
+            }
+        }
+        .form-block{
+            background-color: #293747;
+        }
+    }
+}

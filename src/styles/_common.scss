@@ -1,0 +1,81 @@
+//Define color
+$color-blue: #555cf5;
+$color-lightblue: rgba(85,92,245,0.5);
+$color-black: #2C3037;
+$color-lightblack: #555a64;
+$color-bgdark: #1c2a3b;
+//Define button
+.main-button{
+    background-color: $color-blue;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.main-button:hover{
+    background-color: #1c2a3b;
+}
+.main-outline-button{
+    border: 2px solid $color-lightblue; 
+    background-color: white;
+    color: $color-blue;
+    padding: 8px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.main-outline-button:hover{
+    background-color: #1c2a3b;
+    border: 2px solid #1c2a3b;
+    color: white;
+}
+
+//Define style for title
+.block-title{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: $color-black;
+    margin-top: 100px;
+}
+.block-describe{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: $color-black;
+    margin: 20px 20% 100px 20%;
+}
+//Define style for sub title
+.block-sub-title{
+    font-weight: 700;
+    color: $color-black;
+}
+.block-sub-describe{
+    color: $color-lightblack;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+
+//Responsive
+@media only screen and (max-width:600px){
+    .block-title{
+        font-size: 35px;
+    }
+    .block-describe{
+        font-size: 14px;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .block-sub-title{
+        font-size: 20px;
+    }
+    .block-sub-describe{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}

@@ -1,0 +1,47 @@
+.review{
+    margin: 100px 0;
+    .slick-block{
+        position: relative;
+        margin-bottom: 200px;
+        .custom-slick-slide{
+            background-color: $color-bgdark;
+            color: white;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 1.8;
+            position: relative;
+            .content{
+                font-style: italic;
+            }
+            .rating{
+                color: rgb(247, 160, 47);
+                margin-bottom: 16px;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-top: 20px solid $color-bgdark;
+            }
+        }
+        .slick-img{
+            border-radius: 50%;
+            margin-top: 30px;
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+            border: 2px solid white;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+        }
+    }
+}
