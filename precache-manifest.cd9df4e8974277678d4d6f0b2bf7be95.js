@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c1dc3fbbf4bb9e4ff342e49ff5d86e7",
+    "revision": "6699e77da15cad38704da3233f5f1020",
     "url": "/simple-sotas/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/simple-sotas/static/css/2.69121389.chunk.css"
   },
   {
-    "revision": "1133666f563d5433cd52",
-    "url": "/simple-sotas/static/css/main.656e6314.chunk.css"
+    "revision": "94828dc09df36e54be90",
+    "url": "/simple-sotas/static/css/main.014bf60f.chunk.css"
   },
   {
     "revision": "3356d5d648d55212dd09",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/simple-sotas/static/js/2.2b3e367c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1133666f563d5433cd52",
-    "url": "/simple-sotas/static/js/main.63bb808e.chunk.js"
+    "revision": "94828dc09df36e54be90",
+    "url": "/simple-sotas/static/js/main.8853a0ad.chunk.js"
   },
   {
     "revision": "3c5a9ce0061156ac4f9d",
