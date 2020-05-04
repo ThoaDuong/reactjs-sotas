@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TriggerAnimation from '../scroll/TriggerAnimation'
 
 class StartComp extends Component {
     constructor(props) {
@@ -7,6 +8,10 @@ class StartComp extends Component {
             one: true,
             two: false
         }
+    }
+    componentDidMount() {
+        TriggerAnimation('.step-block', 'trigger-right-in');
+        TriggerAnimation('.collapse-custom', 'trigger-left-in');
     }
     render() {
         return (
@@ -24,21 +29,21 @@ class StartComp extends Component {
                             </div>
                             <div className="col-lg-6 col-md-12">
                                 <div className="row custom-margin-res">
-                                    <div className="step-block media p-3">
+                                    <div className="step-block media p-3 -opacity-0">
                                         <span className="step-block__icon"><i className="fas fa-user"></i></span>
                                         <div className="media-body">
                                             <h4 className="block-sub-title">Create account</h4>
                                             <p className="block-sub-describe">Accumsan at ipsum velit. Nam nec tellus a odio tincun an auctor. Classes aptent taciti litora torquent per idunt auctor aoi.</p>
                                         </div>
                                     </div>
-                                    <div className="step-block media p-3">
+                                    <div className="step-block media p-3 -opacity-0">
                                         <span className="step-block__icon"><i className="fas fa-pen"></i></span>
                                         <div className="media-body">
                                             <h4 className="block-sub-title">Start creating</h4>
                                             <p className="block-sub-describe">Accumsan at ipsum velit. Nam nec tellus a odio tincun an auctor. Classes aptent taciti litora torquent per idunt auctor aoi.</p>
                                         </div>
                                     </div>
-                                    <div className="step-block media p-3">
+                                    <div className="step-block media p-3 -opacity-0">
                                         <span className="step-block__icon"><i className="fas fa-share-alt"></i></span>
                                         <div className="media-body">
                                             <h4 className="block-sub-title">Share and enjoy</h4>
@@ -58,7 +63,7 @@ class StartComp extends Component {
                                     <h2 className="block-sub-title">Save tons on design and development</h2>
                                     <p className="block-sub-describe">Accumsan at ipsum velit. Nam nec tellus a odio tincidunt auctor. Classes aptent taciti litora torquent per idunt auctor a ornare odio.</p>
                                     <div id="accordion">
-                                        <div className="collapse-custom">
+                                        <div className="collapse-custom -opacity-0">
                                             <div className="">
                                                 <a onClick={this.onShowOne}
                                                     className={this.state.one ? "card-custom card-link change-color" : "card-custom card-link"}
@@ -73,7 +78,7 @@ class StartComp extends Component {
                                             </div>
                                             </div>
                                         </div>
-                                        <div className="collapse-custom">
+                                        <div className="collapse-custom -opacity-0">
                                             <div className="">
                                                 <a onClick={this.onShowTwo}
                                                     className={this.state.two ? "card-custom collapsed card-link change-color" : "card-custom collapsed card-link"}

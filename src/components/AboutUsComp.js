@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import TriggerAnimation from '../scroll/TriggerAnimation';
 
 class AboutUsComp extends Component {
     componentDidMount(){
+        //Trigger animation with image
+        TriggerAnimation('.img-left', 'trigger-left-in');
+        TriggerAnimation('.img-right', 'trigger-right-in');
+        //Count number
         const counters = document.querySelectorAll(".number-block__number");
         const speed = 10;
         counters.forEach(counter =>{
@@ -28,7 +33,7 @@ class AboutUsComp extends Component {
                         <div className="about-us__block-one">
                             <div className="row">
                                 <div className="col-lg-6 col-md-12">
-                                    <img className="img" src="images/single-jpg-10.jpg" alt="Describe about us"/>
+                                    <img className="img img-left -opacity-0" src="images/single-jpg-10.jpg" alt="Describe about us"/>
                                 </div>
                                 <div className="col-lg-6 col-md-12 mt-md-5 my-lg-auto">
                                     <h2 className="block-sub-title">We’re an aspiring team of coders and creatives</h2>
@@ -85,7 +90,7 @@ class AboutUsComp extends Component {
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-12 order-lg-last order-first">
-                                        <img className="img" src="images/single-jpg-11.jpg" alt="Describe about us"/>
+                                        <img className="img img-right -opacity-0" src="images/single-jpg-11.jpg" alt="Describe about us"/>
                                     </div>
                                 </div>
                             </div>

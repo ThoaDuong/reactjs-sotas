@@ -58,7 +58,19 @@ $color-bgdark: #1c2a3b;
     margin-top: 15px;
     line-height: 1.8;
 }
-
+//Trigger animation on scroll
+.-opacity-0{
+    opacity: 0;
+}
+.trigger-left-in{
+    animation: left-in-ani .6s ease-out forwards;
+}
+.trigger-right-in{
+    animation: right-in-ani .6s ease-out forwards;
+}
+.trigger-bottom-in{
+    animation: bottom-in-ani .6s ease-out forwards;
+}
 
 //Responsive
 @media only screen and (max-width:600px){

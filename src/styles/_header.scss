@@ -1,11 +1,21 @@
-header{
+#header{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    transition: all .2s;
+}
+.header-scroll{
+    background-color: $color-bgdark;
+    transition: all .2s;
+}
+.--background{
+    background-color: #fff;
+}
+header{ 
     .nav-custom{
         height: 75px;
-        background-color: #fff;
         font-size: 18px;
-        #navbar{
-            background-color: white;
-        }
         .menu{
             z-index: 9;
             li{

@@ -12,7 +12,7 @@ class Home extends Component {
     render() {
         return (
             <Fragment>
-                <HeaderComp/>
+                <HeaderComp home = '--background'/>
                 <div className="home-main-content">
                     <LeadSliderComp/>
                     <StartComp/>

@@ -8,7 +8,7 @@ class ContactMapComp extends Component {
             lat: 10.823099,
             lng: 106.629662
         },
-        zoom: 15
+        zoom: 13
     };
     render() {
         return (

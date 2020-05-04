@@ -1,13 +1,13 @@
 .title-block{
     background: url("../bgimages/bg-01.jpg") center/cover no-repeat;
-    height: 50vh;
+    height: 55vh;
     width: 100%;
     position: relative;
     &::after{
         content: '';
         position: absolute;
         background: rgba($color: $color-bgdark, $alpha: 0.85);
-        height: 50vh;
+        height: 55vh;
         top: 0;
         left: 0;
         width: 100%;

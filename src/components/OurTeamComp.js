@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
 class OurTeamComp extends Component {
+    componentDidMount() {
+        //Trigger animation with '.person-block' called in PersonBlockComp.js
+    }
     render() {
         return (
             <section>
@@ -10,7 +13,7 @@ class OurTeamComp extends Component {
                         <p className="block-describe">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a mauris vitae elit. Class aptent taciti litora torquent per idunt auctor a ornare odio.</p>
                         <div className="row">
                             <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="person-block">
+                                <div className="person-block -opacity-0">
                                     <div className="person-block__img-social">
                                         <img className="person-block__img" src="images/team-01.jpg" alt="about our team"/>
                                         <div className="person-block__social">
@@ -25,7 +28,7 @@ class OurTeamComp extends Component {
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="person-block">
+                                <div className="person-block -opacity-0">
                                     <div className="person-block__img-social">
                                         <img className="person-block__img" src="images/team-02.jpg" alt="about our team"/>
                                         <div className="person-block__social">
@@ -40,7 +43,7 @@ class OurTeamComp extends Component {
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="person-block">
+                                <div className="person-block -opacity-0">
                                     <div className="person-block__img-social">
                                         <img className="person-block__img" src="images/team-03.jpg" alt="about our team"/>
                                         <div className="person-block__social">
@@ -55,7 +58,7 @@ class OurTeamComp extends Component {
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-6 col-sm-6">
-                                <div className="person-block">
+                                <div className="person-block -opacity-0">
                                     <div className="person-block__img-social">
                                         <img className="person-block__img" src="images/team-04.jpg" alt="about our team"/>
                                         <div className="person-block__social">
