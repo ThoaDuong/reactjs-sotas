@@ -20,7 +20,7 @@ class HeaderComp extends Component {
         var prevScroll = window.scrollY;
         window.onscroll = function() {
             var currentScrollPos = window.scrollY;
-              if (prevScroll > currentScrollPos) {
+              if (prevScroll >= currentScrollPos) {
                 headerElement.style.top = "0";
               } else {
                 headerElement.style.top = "-100px";

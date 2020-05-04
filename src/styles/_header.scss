@@ -1,6 +1,6 @@
 #header{
     position: fixed;
-    top: 0;
+    top: 0px;
     z-index: 999;
     width: 100%;
     transition: all .2s;
@@ -19,9 +19,7 @@ header{
         .menu{
             z-index: 9;
             li{
-                .active{
-                    color: $color-blue!important;
-                }
+                margin: 18px;
                 .child-item{
                     z-index: 9;
                     display: none;
@@ -45,14 +43,48 @@ header{
                 }
                 a{
                     color: #888!important;
-                    padding: 20px!important;
                     font-weight: 700;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        border-bottom: 3px solid $color-blue;
+                        width: 0%;
+                        transition: width 0.3s linear;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 50%;
+                        border-bottom: 3px solid $color-blue;
+                        width: 0%;
+                        transition: width 0.3s linear;
+                    }
+                    &:hover::after{
+                        width: 50%;
+                    }
+                    &:hover::before{
+                        width: 50%;
+                    }
                     &:hover{
                         color: $color-blue!important;
                     }
                 }
                 &:hover .child-item{
                     display: block;
+                }
+                .active{
+                    color: $color-blue!important;
+                    border-bottom: 3px solid $color-blue;
+                    &:hover::after{
+                        width: 0%;
+                    }
+                    &:hover::before{
+                        width: 0%;
+                    }
                 }
             }
         }
